@@ -7,6 +7,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^0.26.1",
+    "dotenv": "^16.0.0",
     "vue": "^3.2.25"
   },
   "devDependencies": {
