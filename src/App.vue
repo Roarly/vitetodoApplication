@@ -1,7 +1,6 @@
 <script setup>
 import Title from "./components/Title.vue";
 import List from "./components/List.vue";
-import "./utils/config";
 import useTodos from "./composables/useTodos";
 
 const { pending, Completed, changeStatus } = useTodos();

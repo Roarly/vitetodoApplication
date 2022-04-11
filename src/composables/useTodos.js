@@ -1,18 +1,12 @@
-import "../utils/config";
 import { ref, computed } from "vue";
 import axios from "axios";
-//not working still getting process "Uncaught reference : process is not defined."
 const todos = ref([]);
 
-// const URL = process.env.API_URL;
-// const Username = process.env.API_USER;
-// const Password = process.env.API_PASS;
-
 const api = axios.create({
-  baseURL: process.env.API_URL,
+  baseURL: import.meta.env.VITE_API_URL,
   params: {
-    username: process.env.API_USER,
-    password: process.env.API_PASS,
+    username: import.meta.env.VITE_API_USER,
+    password: import.meta.env.VITE_API_PASS,
   },
 });
 
